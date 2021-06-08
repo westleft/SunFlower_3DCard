@@ -1,0 +1,86 @@
+$mainColor: #4b2b11;
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin size($w,$h){
+    width: $w;
+    height: $h;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+html {
+    height: 100%; 
+}
+body {    
+    @include center;
+    @include size(100%,100%);
+    margin: 0;  
+    background-image: url(/image/shadow.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    perspective: 1500;
+    background-color: #77817e;
+}
+.container {
+    @include center;
+    width: 60%;   
+    h1 {
+        font-size: 36px;
+        color: #724119;
+    }
+    .img_box {
+        @include size(80%,65vh);
+        position: absolute;
+        background-image: url(/image/sunflower.png);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;  
+        bottom: -6%;    
+    }
+    .card {
+        @include center;
+        position: relative;
+        flex-direction: column;
+        background-color: #F5F5F5;  
+        transform-style:  preserve-3d;
+        min-height: 80vh;  
+        min-width: 300px;     
+        padding: 15px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.2),0px 0px 50px rgba(0,0,0,0.2);
+        overflow: hidden;
+        .outer_box {
+            @include center;
+            @include size(90%,70vh);
+            flex-direction: column;
+            justify-content: space-between;
+            background-color:  #d2c1acc0;  
+            padding: 15% 0; 
+            .post {
+                @include center;
+                @include size(160px,120px);
+                position: relative;
+                flex-direction: column;   
+                background-color: rgba(255, 255, 255, 0.829);
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+                z-index: 2;            
+                p {
+                    @include center;
+                    width: 80%;
+                    font-size: 16px;
+                    padding: 1%;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                    color: #8b731c;
+                }
+            }          
+        }
+    }
+}
