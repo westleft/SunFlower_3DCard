@@ -22,7 +22,7 @@ body {
     @include center;
     @include size(100%,100%);
     margin: 0;  
-    background-image: url(/image/shadow.png);
+    background-image: url(../image/shadow.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
     .img_box {
         @include size(80%,65vh);
         position: absolute;
-        background-image: url(/image/sunflower.png);
+        background-image: url(../image/sunflower.png);
         background-size: 90%;
         background-repeat: no-repeat;
         background-position: center;  

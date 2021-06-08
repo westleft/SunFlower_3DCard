@@ -23,7 +23,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-image: url(/image/shadow.png);
+  background-image: url(../image/shadow.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,7 +54,7 @@ body {
   width: 80%;
   height: 65vh;
   position: absolute;
-  background-image: url(/image/sunflower.png);
+  background-image: url(../image/sunflower.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
