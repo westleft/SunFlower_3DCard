@@ -8,6 +8,8 @@
 
 html {
   height: 100%;
+  -webkit-perspective: 1000;
+          perspective: 1000;
 }
 
 body {
@@ -22,14 +24,48 @@ body {
           justify-content: center;
   width: 100%;
   height: 100%;
+  position: relative;
   margin: 0;
   background-image: url(../image/shadow.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-perspective: 1500;
-          perspective: 1500;
+  -webkit-perspective: 800;
+          perspective: 800;
   background-color: #77817e;
+}
+
+.player {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background-image: url(../image/play.png);
+  background-size: cover;
+}
+
+.music_animation {
+  -webkit-animation: player_animation 1.5s infinite ease;
+          animation: player_animation 1.5s infinite ease;
+}
+
+@-webkit-keyframes player_animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes player_animation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 
 .container {
@@ -48,6 +84,8 @@ body {
 .container h1 {
   font-size: 36px;
   color: #724119;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .container .img_box {
@@ -59,6 +97,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   bottom: -6%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .container .card {
@@ -85,6 +125,8 @@ body {
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
 }
 
 .container .card .outer_box {
@@ -131,6 +173,8 @@ body {
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   z-index: 2;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .container .card .outer_box .post p {
