@@ -14,7 +14,7 @@ container.addEventListener('mousemove', function(e){
 
 //滑鼠進入作用區域
 container.addEventListener('mouseenter',function(e){
-    card.style.transition = `all 0.05s ease`;
+    card.style.transition = `all 0.1s ease`;
     title.style.transform = `translateZ(50px) rotateX(10deg)`;
     post.style.transform = `translateZ(150px)`;
     img.style.transform = `translateZ(50px)`;
